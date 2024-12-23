@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de Contact</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f0f0f0;
+        }
+        form { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input, textarea { 
+            width: 100%; 
+            margin: 10px 0; 
+            padding: 10px; 
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button { 
+            width: 100%; 
+            padding: 12px; 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/formulaire" method="post">
+        <h2>Contactez-nous</h2>
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <input type="tel" name="telephone" placeholder="Votre téléphone">
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
